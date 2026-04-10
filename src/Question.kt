@@ -1,6 +1,6 @@
 import javax.management.monitor.StringMonitor
 
-class Question <T>(
+data class Question <T>(
     val questionText:String,
     val answer: T,
     val difficulty: Difficulty
@@ -27,7 +27,7 @@ fun main(){
         28,
         Difficulty.HARD
     )
-    println(question1.answer)
+    println(question1.toString())
     println(question2.answer)
     println(question3.answer)
 }
