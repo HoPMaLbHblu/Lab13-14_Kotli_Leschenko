@@ -28,6 +28,25 @@ fun main() {
     solarSystem.add("Pluto")
     solarSystem.add(3,"Theia")
     solarSystem[3]="Future Moon"
+    //    solarSystem.remove("Pluto")
+//    println(solarSystem.size)
+//    println(solarSystem.contains("Pluto"))
+
+//    println("Pluto" in solarSystem)
+//    solarSystem.add("Pluto")
+//    println(solarSystem.size)
+
+//    println(solarSystem.size)
+//    solarSystem.add("Pluto")
+//    println(solarSystem.size)
+//    println(solarSystem.contains("Pluto"))
+
+
+
+//    println(solarSystem[7])
+//    solarSystem.add("Pluto")
+//    solarSystem.add(3,"Theia")
+//    solarSystem[3]="Future Moon"
 //    println(solarSystem[3])
 //    println(solarSystem[9])
 //    solarSystem.removeAt(9)
@@ -36,6 +55,8 @@ fun main() {
 //    println(solarSystem.indexOf("Pluto"))
     println(solarSystem.contains("Pluto"))
     println("Future Moon" in solarSystem)
+    //    println(solarSystem.contains("Pluto"))
+//    println("Future Moon" in solarSystem)
 //  for (planet in solarSystem){
 //      println(planet)
 //  }
