@@ -11,7 +11,7 @@ enum class Difficulty{
     HARD
 }
 
-fun main(){
+class Quiz {
     val question1= Question<String>(
         "речка спятила с ума - по домам пошла сама",
         "водопровод",
@@ -27,7 +27,19 @@ fun main(){
         28,
         Difficulty.HARD
     )
-    println(question1.toString())
-    println(question2.answer)
-    println(question3.answer)
+    companion object StudentProgress{
+        var total: Int = 10
+        var answered: Int = 3
+    }
+
+}
+
+fun main(){
+
+//    println(question1.toString())
+//    println(question2.answer)
+//    println(question3.answer)
+
+    println("${Quiz.answered} of ${Quiz.total} answered")
+
 }
