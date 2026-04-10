@@ -15,7 +15,7 @@ class Quiz: ProgressPrintable{
     override val progressText: String
         get() = "${answered} of ${total} answered"
     val question1= Question<String>(
-        "речка спятила с ума - по домам пошла сама",
+        "Речка спятила с ума - по домам пошла сама.",
         "водопровод",
         Difficulty.MEDIUM
     )
@@ -25,13 +25,35 @@ class Quiz: ProgressPrintable{
         Difficulty.EASY
     )
     val question3 = Question<Int>(
-        "Сколько дней между полнолуниями",
+        "Сколько дней между полнолуниями?",
         28,
         Difficulty.HARD
     )
     companion object StudentProgress{
         var total: Int = 10
         var answered: Int = 3
+    }
+    fun printQuiz(){
+        question1.let {
+            println(question1.questionText)
+            println(question1.answer)
+            println(question1.difficulty)
+            println()
+        }
+
+        question2.let {
+            println(question2.questionText)
+            println(question2.answer)
+            println(question2.difficulty)
+            println()
+        }
+
+        question3.let {
+            println(question3.questionText)
+            println(question3.answer)
+            println(question3.difficulty)
+            println()
+        }
     }
 
 }
@@ -57,5 +79,6 @@ fun main(){
 //    println("${Quiz.answered} of ${Quiz.total} answered")
 
 //    Quiz.printProgressBar()
-    Quiz().printProgressBar()
+//    Quiz().printProgressBar()
+    Quiz().apply { printQuiz() }
 }
